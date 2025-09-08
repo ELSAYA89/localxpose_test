@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Bonito</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Registro</h2>
+    <form action="/submit" method="POST">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje..."></textarea>
+
+      <label for="pais">País</label>
+      <select id="pais" name="pais">
+        <option value="">Selecciona</option>
+        <option value="mx">México</option>
+        <option value="es">España</option>
+        <option value="ar">Argentina</option>
+        <option value="co">Colombia</option>
+      </select>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>
